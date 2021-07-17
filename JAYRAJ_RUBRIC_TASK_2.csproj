@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D7F04DA4-6B86-4B77-97D7-B0211B296DEE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>JAYRAJ_RUBRIC_TASK_2</RootNamespace>
+    <AssemblyName>JAYRAJ_RUBRIC_TASK_2</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BOOK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BOOK.Designer.cs">
+      <DependentUpon>BOOK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="connection.cs" />
+    <Compile Include="ISSUEBOOK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ISSUEBOOK.Designer.cs">
+      <DependentUpon>ISSUEBOOK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ISSUEBOOKINFO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ISSUEBOOKINFO.Designer.cs">
+      <DependentUpon>ISSUEBOOKINFO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MANU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MANU.Designer.cs">
+      <DependentUpon>MANU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RETURNBOOK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RETURNBOOK.Designer.cs">
+      <DependentUpon>RETURNBOOK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="STUDENT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="STUDENT.Designer.cs">
+      <DependentUpon>STUDENT.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BOOK.resx">
+      <DependentUpon>BOOK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ISSUEBOOK.resx">
+      <DependentUpon>ISSUEBOOK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ISSUEBOOKINFO.resx">
+      <DependentUpon>ISSUEBOOKINFO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MANU.resx">
+      <DependentUpon>MANU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RETURNBOOK.resx">
+      <DependentUpon>RETURNBOOK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="STUDENT.resx">
+      <DependentUpon>STUDENT.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="honestyLibrary.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="honestyLibrary_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>honestyLibrary.mdf</DependentUpon>
+    </Content>
+    <None Include="Resources\a111111.jpg" />
+    <None Include="Resources\a11111.jpg" />
+    <None Include="Resources\jj1111.jpg" />
+    <None Include="Resources\a1111.jpg" />
+    <None Include="Resources\patrick-tomasso-QMDap1TAu0g-unsplash1.jpg" />
+    <None Include="Resources\annie-spratt-0ZPSX_mQ3xI-unsplash.jpg" />
+    <None Include="Resources\siyan-ren-5cwPfMLqYs0-unsplash.jpg" />
+    <None Include="Resources\kristina-kashtanova-EwpUsHDmEwg-unsplash.jpg" />
+    <None Include="Resources\patrick-tomasso-QMDap1TAu0g-unsplash.jpg" />
+    <None Include="Resources\j444.jpg" />
+    <None Include="Resources\j5555.jpg" />
+    <None Include="Resources\j331.jpg" />
+    <None Include="Resources\j33.jpg" />
+    <None Include="Resources\j21.jpg" />
+    <None Include="Resources\pexels-photo-37603231.jpeg" />
+    <None Include="Resources\j2.jpg" />
+    <None Include="Resources\pexels-photo-3760323.jpeg" />
+    <None Include="Resources\pexels-photo-1383562.jpeg" />
+    <None Include="Resources\markus-spiske-k0rVudBoB4c-unsplash.jpg" />
+    <None Include="Resources\DDDDDDDDDDDDDDDDDDDDDDD.jpg" />
+    <None Include="Resources\JS11111.jpg" />
+    <None Include="Resources\JS1111.jpg" />
+    <None Include="Resources\hhdsuhdhjdsij.jpg" />
+    <None Include="Resources\JJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJ.jpeg" />
+    <None Include="Resources\pexels-photo-43841471.jpeg" />
+    <None Include="Resources\proff1.jpg" />
+    <None Include="Resources\black_light_dark_figures_73356_1920x10801.jpg" />
+    <None Include="Resources\pexels-photo-4384147.jpeg" />
+    <None Include="Resources\copyyyyy.jpg" />
+    <None Include="Resources\copyy1.jpg" />
+    <None Include="Resources\photo-1481627834876-b7833e8f55702.jpg" />
+    <None Include="Resources\hfddhfdhfpi1.jpg" />
+    <None Include="Resources\JJJJJJJJJJJJJJJJJJJJJJJJJJ.jpeg" />
+    <None Include="Resources\proff.jpg" />
+    <None Include="Resources\a121.jpg" />
+    <None Include="Resources\a12.jpg" />
+    <None Include="Resources\jjjjjjjjjjjjj1.jpg" />
+    <None Include="Resources\jjjjjjjjjjjjjsss.jpg" />
+    <None Include="Resources\jj.JPG" />
+    <None Include="Resources\jjjjjjj.jpg" />
+    <None Include="Resources\jjjjjjjjjjjjj.jpg" />
+    <None Include="Resources\your gf.jpg" />
+    <None Include="Resources\abc1.jpg" />
+    <None Include="Resources\123.jpg" />
+    <None Include="Resources\j.jpg" />
+    <None Include="Resources\94350840-concept-image-of-education-and-learning-stocks-of-books-next-to-open-book-and-eyeglasses-on-a-desk-i.jpg" />
+    <None Include="Resources\photo-1513185041617-8ab03f83d6c51.jpg" />
+    <None Include="Resources\photo-1513185041617-8ab03f83d6c5.jpg" />
+    <None Include="Resources\photo-1481627834876-b7833e8f55701.jpg" />
+    <None Include="Resources\photo-1481627834876-b7833e8f5570.jpg" />
+    <None Include="Resources\photo-1481627834876-b7833e8f5570 %283%29.jpg" />
+    <None Include="Resources\photo-1481627834876-b7833e8f5570 %282%29.jpg" />
+    <None Include="Resources\copyyy3.jpg" />
+    <None Include="Resources\copyy.jpg" />
+    <None Include="Resources\copy2.jpg" />
+    <None Include="Resources\copppyy4.jpg" />
+    <None Include="Resources\Capture.PNG" />
+    <None Include="Resources\black_light_dark_figures_73356_1920x1080.jpg" />
+    <None Include="Resources\abc.jpg" />
+    <None Include="Resources\32.jpg" />
+    <None Include="Resources\31.jpg" />
+    <None Include="Resources\3.jpg" />
+    <None Include="Resources\2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
